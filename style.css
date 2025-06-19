@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#section1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1625244724120-1fd1d34d00f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#main #section1 #overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.803);
+}
+
+#main #bracker {
+    width: 100%;
+    height: 60px;
+    /* background-color: aqua; */
+}
+
+#main #nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background: rgba(96, 96, 96, 0.266);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.735);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8.5px);
+}
+
+#main #nav #logo {
+    font-size: 10px;
+    color: rgb(234, 106, 15);
+}
+
+#main #nav #menu {
+    display: flex;
+    gap: 60px;
+}
+
+#nav #buttons {
+    display: flex;
+    gap: 26px;
+    /* background-color: aqua; */
+}
+
+#main #nav button {
+    padding: 8px 18px;
+    border-radius: 5px;
+    background-color: rgb(80, 71, 255);
+    border: none;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+#main #nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #ebebeb;
+}
+
+#nav #buttons #signup_btn {
+    background-color: rgb(234, 106, 15);
+}
+
+#overlay #main_content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    width: 700px;
+    /* background-color: blue; */
+
+}
+
+#overlay #main_content h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #ffff;
+    font-weight: 700;
+}
+
+#overlay #main_content h1 span {
+    color: rgb(234, 106, 15);
+}
+
+#overlay #main_content p {
+    font-size: 15px;
+    color: #ffff;
+    text-align: center;
+}
+
+#overlay #main_content button {
+    width: 150px;
+    padding: 15px 30px;
+    background-color: rgb(234, 106, 15);
+    border: none;
+    color: #ffff;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+#section1 #popular_list {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: 8px;
+    color: #ebebeb;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    overflow: hidden;
+    border-top-right-radius: 70px;
+    background: rgba(255, 255, 255, 0.238);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+}
+
+#popular_list h1 {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#section1 #popular_list #hotel_list {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+
+}
+
+#hotel_list #hotel_img {
+    width: 150px;
+    height: 70%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+#hotel_img .overlay{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.532);
+    opacity: 0;
+    border-radius: 10px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1).3s;
+}
+
+#hotel_img .overlay button{
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    background-color: #fb7f26;
+    color: #ffff;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+#hotel_img:hover .overlay{
+    opacity: 1;
+}
